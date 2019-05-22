@@ -2,15 +2,15 @@
 Your chance to explore Loops and Turtles!
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
+         their colleagues and Alfred Mustafa.
 """
 ########################################################################
-# TODO: 1.
+# Done: 1.
 # On Line 5 above, replace  PUT_YOUR_NAME_HERE  with your own name.
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -28,3 +28,37 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #
 #  Don't forget to COMMIT your work by using  VCS ~ Commit and Push.
 ########################################################################
+
+import rosegraphics as rg
+
+window = rg.TurtleWindow()
+red_turtle = rg.SimpleTurtle('turtle')
+red_turtle.pen = rg.Pen('red',3)
+red_turtle.speed = 10
+
+
+for k in range(10):
+
+ red_turtle.right(45)
+ red_turtle.forward(200)
+ red_turtle.right(90)
+ red_turtle.forward(200)
+
+
+window = rg.TurtleWindow()
+green_turtle = rg.SimpleTurtle('turtle')
+green_turtle.pen = rg.Pen('green',5)
+green_turtle.speed = 20
+
+for k in range (2):
+    green_turtle.right(90)
+    green_turtle.forward(100)
+    green_turtle.right(90)
+    green_turtle.forward(100)
+    green_turtle.right(90)
+    green_turtle.forward(100)
+    green_turtle.right(90)
+    green_turtle.forward(100)
+
+
+window.close_on_mouse_click()
